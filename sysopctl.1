@@ -19,6 +19,14 @@ show_help() {
     echo "  process monitor   Monitor system processes"
     echo "  logs analyze      Analyze system logs"
     echo "  backup <path>     Backup system files"
+    echo
+    echo "Examples:"
+    echo "  sysopctl service list                # List all running services"
+    echo "  sysopctl service start nginx         # Start the nginx service"
+    echo "  sysopctl system load                 # View system load averages"
+    echo "  sysopctl backup /home/user/docs      # Backup documents directory"
+    echo
+    echo "For more information, see the man page: man sysopctl"
 }
 
 # Display version information
