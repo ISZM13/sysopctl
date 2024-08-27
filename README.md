@@ -1,25 +1,17 @@
 # sysopctl
- A new all in one command for linux
-Here’s a well-formatted `README.md` for your Git repository:
-
-````markdown
-
-# sysopctl
 
 `sysopctl` is a custom command-line tool designed for managing system resources and tasks on Linux systems. This tool provides various functionalities such as managing services, monitoring system processes, and backing up files.
 
 ## Features
 
-### **1\. Manual Page and help**
+### **1. Manual Page and Help**
 
 Provides detailed documentation for `sysopctl`.
 
 **Command:**
 ```bash
-    ./sysopctl --man
-    ./sysopctl --help
-
-````
+./sysopctl --man
+./sysopctl --help
 
 **Description:** Displays usage and examples of the `sysopctl` command.
 
