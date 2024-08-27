@@ -1,8 +1,9 @@
-!/bin/bash
+#!/bin/bash
 
+# Define the version of sysopctl
 VERSION="v0.1.0"
 
-# Display help message
+# Function to display the help message
 show_help() {
     echo "Usage: sysopctl [option] [subcommand] [arguments]"
     echo
@@ -29,52 +30,9 @@ show_help() {
     echo "For more information, see the man page: man sysopctl"
 }
 
-# Display version information
+# Function to display the version information
 show_version() {
     echo "sysopctl version $VERSION"
-}
-
-# List running services
-list_services() {
-    systemctl list-units --type=service --state=running
-}
-
-# View system load
-view_load() {
-    uptime
-}
-
-# Start a service
-start_service() {
-    sudo systemctl start "$1"
-    echo "Started service: $1"
-}
-
-# Stop a service
-stop_service() {
-    sudo systemctl stop "$1"
-    echo "Stopped service: $1"
-}
-
-# Check disk usage
-check_disk_usage() {
-    df -h
-}
-
-# Monitor system processes
-monitor_processes() {
-    top
-}
-
-# Analyze system logs
-analyze_logs() {
-    journalctl -p 3 -n 20
-}
-
-# Backup system files
-backup_files() {
-    rsync -av --delete "$1" /backup/
-    echo "Backup initiated for $1"
 }
 
 # Main script logic
