@@ -12,6 +12,7 @@ Provides detailed documentation for `sysopctl`.
 ```bash
 ./sysopctl --man
 ./sysopctl --help
+```
 
 **Description:** Displays usage and examples of the `sysopctl` command.
 
